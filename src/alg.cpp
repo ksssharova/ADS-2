@@ -12,7 +12,7 @@ double pown(double value, uint16_t n) {
 }
 
 uint64_t fact(uint16_t n) {
-  uint16_t res = 1;
+  uint64_t res = 1;
   for (int i = 1; i<= n; i++){
     res *= i;
   }
@@ -54,6 +54,6 @@ int main() {
   std::cout<<fact(5)<<std::endl;
   std::cout<<calcItem(3, 4)<<std::endl;
   std::cout<<expn(1, 2)<<std::endl;
-  std::cout<<sinn(0, 3)<<std::endl;
+  std::cout<<sinn(1, 3)<<std::endl;
   std::cout<<cosn(1, 5)<<std::endl;
 }

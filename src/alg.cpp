@@ -12,10 +12,11 @@ double pown(double value, uint16_t n) {
 }
 
 uint64_t fact(uint16_t n) {
-  if (n==1)
-    return 1;
-  else
-    return n*fact(n-1);
+  int res = 1;
+  for (int i = 1; i<= n; i++){
+    res *= i;
+  }
+  return res;
 }
 
 double calcItem(double x, uint16_t n) {

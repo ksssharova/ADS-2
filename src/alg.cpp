@@ -13,7 +13,7 @@ double pown(double value, uint16_t n) {
 
 uint64_t fact(uint16_t n) {
   uint64_t res = 1;
-  for (int i = 1; i<= n; i++){
+  for (int i = 1; i<= n; i++) {
     res *= i;
   }
   return res;
@@ -47,13 +47,4 @@ double cosn(double x, uint16_t count) {
     c = c + (pown(-1, (i - 1)) * calcItem(x, n));
   }
   return c;
-}
-
-int main() {
-  std::cout<<pown(3, 2)<<std::endl;
-  std::cout<<fact(5)<<std::endl;
-  std::cout<<calcItem(3, 4)<<std::endl;
-  std::cout<<expn(1, 2)<<std::endl;
-  std::cout<<sinn(1, 3)<<std::endl;
-  std::cout<<cosn(1, 5)<<std::endl;
 }
